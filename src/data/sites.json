@@ -1,0 +1,12 @@
+[
+  {
+    "id": "shelly",
+    "name": "Shelly Beach",
+    "coordinates": [151.298, -33.801]
+  },
+  {
+    "id": "fairy",
+    "name": "Fairy Bower",
+    "coordinates": [151.294, -33.805]
+  }
+]
