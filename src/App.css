@@ -17,21 +17,22 @@
 
 /* Navigation */
 
-.navbar {
+.sidebar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 72px;
   right: 0;
-  height: 72px;
-  z-index: 4;
+  bottom: 0;
+  z-index: 3;
+
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+
+  background: #fafbf9;
+  box-shadow: -6px 0 30px #00000012;
 
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 28px;
-  background: #fafbf9;
-  border-bottom: 1px solid #e4e9e7;
+  flex-direction: column;
   box-sizing: border-box;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .add-dive-sidebar {
-  z-index: 5;
+  z-index: 3;
 }
 
 /* Add Dive Form */
@@ -136,16 +137,6 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 600px) {
-  .navbar {
-    padding: 0 16px;
-  }
-
-  .navbar h1 {
-    font-size: 17px;
-  }
-}
-
 /* Dive site pins */
 
 .dive-pin {
@@ -179,6 +170,7 @@
   display: flex;
   flex-direction: column;
 }
+
 
 .sidebar-header {
   padding: 32px 28px 24px;
@@ -216,9 +208,10 @@
 }
 
 .sidebar-content {
-  padding: 24px 28px;
-  overflow-y: auto;
   flex: 1;
+  padding: 24px 28px;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 .dive-row {
@@ -300,6 +293,14 @@
 }
 
 @media (max-width: 600px) {
+   .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar h1 {
+    font-size: 17px;
+  }
+
   .sidebar {
     width: 100%;
   }
